@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
-@Database
+@Database (entities = [Entity::class], version = 1)
 abstract class MainbD : RoomDatabase() {
     companion object {
         fun getBd(context: Context): MainbD {
