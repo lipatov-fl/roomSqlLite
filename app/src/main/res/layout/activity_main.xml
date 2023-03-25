@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_top"
-        android:text="TextView"
+        android:text="@string/result"
         app:layout_constraintEnd_toEndOf="@+id/edPrice"
         app:layout_constraintStart_toStartOf="@+id/edPrice"
         app:layout_constraintTop_toBottomOf="@+id/edPrice" />
