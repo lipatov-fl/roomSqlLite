@@ -3,16 +3,52 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/padding_project"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <EditText
+        android:id="@+id/edName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:ems="10"
+        android:hint="@string/hintName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edPrice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/edPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/hintPrice"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <TextView
+        android:id="@+id/tvList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/edPrice"
+        app:layout_constraintStart_toStartOf="@+id/edPrice"
+        app:layout_constraintTop_toBottomOf="@+id/edPrice" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintEnd_toEndOf="@+id/tvList"
+        app:layout_constraintStart_toStartOf="@+id/tvList"
+        app:layout_constraintTop_toBottomOf="@+id/tvList" />
 </androidx.constraintlayout.widget.ConstraintLayout>

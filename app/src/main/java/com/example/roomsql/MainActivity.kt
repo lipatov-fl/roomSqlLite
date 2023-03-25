@@ -2,10 +2,13 @@ package com.example.roomsql
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.roomsql.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    lateinit var bindingClass : ActivityMainBinding
+    override fun onCreate(s: Bundle?) {
+        super.onCreate(s)
+        bindingClass = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bindingClass.root)
     }
 }
