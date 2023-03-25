@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="@dimen/padding_project"
     android:layout_height="match_parent"
+    android:padding="@dimen/padding_project"
     tools:context=".MainActivity">
 
 
@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_top"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/hintPrice"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/edName"
         app:layout_constraintStart_toStartOf="@+id/edName"
         app:layout_constraintTop_toBottomOf="@+id/edName" />
@@ -46,8 +46,8 @@
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
         android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="@+id/tvList"
         app:layout_constraintStart_toStartOf="@+id/tvList"
         app:layout_constraintTop_toBottomOf="@+id/tvList" />
